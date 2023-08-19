@@ -1,6 +1,6 @@
 package com.Elbracht.StudyCards.Deck;
 
-import com.Elbracht.StudyCards.User.User;
+import com.Elbracht.StudyCards.Account.Account;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -27,5 +27,5 @@ public class Deck {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private Account account;
 }

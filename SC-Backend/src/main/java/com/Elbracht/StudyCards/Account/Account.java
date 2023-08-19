@@ -1,4 +1,4 @@
-package com.Elbracht.StudyCards.User;
+package com.Elbracht.StudyCards.Account;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,12 +17,12 @@ import java.util.UUID;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     @NotNull
-    private String username;
+    private String accountname;
     @NotNull
     private String password;
     @NotNull
