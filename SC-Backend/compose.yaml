@@ -1,9 +1,0 @@
-version: latest
-
-services:
-
-  db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: 4GW28!,WFhURV3}

@@ -1,0 +1,15 @@
+version: "1.0"
+name: sc-backend
+
+services:
+
+  postgres:
+    container_name: PostgresDB-Container
+    image: postgres:latest
+    restart: always
+    ports:
+    - '5432:5432'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 4GW28!,WFhURV3}
